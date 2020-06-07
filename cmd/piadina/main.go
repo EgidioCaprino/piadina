@@ -12,12 +12,12 @@ import (
 const pageLimit = 10
 
 func main() {
-	query := flag.String("query", "", "search term")
 	flag.Parse()
-	if *query == "" {
+	query := flag.Arg(0)
+	if query == "" {
 		log.Fatalln("expected a query")
 	}
-	results, err := godev.QueryGoDev(*query, pageLimit)
+	results, err := godev.QueryGoDev(query, pageLimit)
 	if err != nil {
 		log.Fatalln(err)
 	}
