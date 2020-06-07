@@ -42,7 +42,7 @@ func parseResultHtmlPage(htmlPage io.Reader) ([]ResultPackage, error) {
 	if err != nil {
 		return nil, err
 	}
-	result := make([]ResultPackage, 10)
+	result := make([]ResultPackage, 0, 10)
 	var firstError error
 	document.Find("div.SearchSnippet").Each(func(index int, selection *goquery.Selection) {
 		if firstError == nil {
@@ -74,7 +74,7 @@ func parseInfo(info string) (ResultPackage, error) {
 		case "Published":
 			result.PublishDate = value
 			break
-		case "Imported By":
+		case "Imported by":
 			imports, err := strconv.Atoi(value)
 			if err != nil {
 				return result, fmt.Errorf("unable to parse version from %s: %w", value, err)

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
+      name="Description">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:600|Roboto:400,700|Source+Code+Pro" rel="stylesheet">
+<link href="/static/css/stylesheet.css?version=2020-05-28t15-16-825ac736457998207a6ae5d67e4e9b24f0b721a4"
+      rel="stylesheet">
+<link href="/third_party/dialog-polyfill/dialog-polyfill.css?version=2020-05-28t15-16-825ac736457998207a6ae5d67e4e9b24f0b721a4"
+      rel="stylesheet">
+<title>log · pkg.go.dev</title>
+<body class="Site">
+<header class="Site-header Site-header--dark">
+    <div class="Header">
+        <nav class="Header-nav">
+            <a class="Header-logoLink" href="https://go.dev/">
+                <img alt="Go" class="Header-logo" src="/static/img/go-logo-white.svg">
+            </a>
+
+            <div class="Header-searchForm-container">
+                <form action="/search" aria-owns="AutoComplete-list" class="Header-searchForm" id="AutoComplete-parent"
+                      role="search">
+                    <div class="SearchForm-firstRow">
+                        <input aria-autocomplete="list"
+                               aria-controls="AutoComplete-list"
+                               aria-label="Search for a package"
+                               autocapitalize="off"
+                               autocomplete="off"
+                               autocorrect="off"
+                               class="Header-searchFormInput"
+                               id="AutoComplete"
+                               name="q"
+                               placeholder="Search for a package"
+                               role="textbox"
+                               size="1"
+                               spellcheck="false"
+                               title="Search for a package"
+                               type="text"
+                               value="log"
+                        >
+                        <button aria-label="Search for a package" class="Header-searchFormSubmit">
+                            <svg aria-hidden="true" class="Header-searchFormSubmitIcon" focusable="false"
+                                 role="presentation" viewBox="0 0 24 24">
+                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <ul class="Header-menu">
+                <li class="Header-menuItem">
+                    <a href="https://go.dev/solutions" title="Why Go">Why Go</a>
+                </li>
+                <li class="Header-menuItem">
+                    <a href="https://learn.go.dev" title="Getting Started">Getting Started</a>
+                </li>
+                <li class="Header-menuItem Header-menuItem--active">
+                    <a href="/" title="Discover Packages">Discover Packages</a>
+                </li>
+                <li class="Header-menuItem">
+                    <a href="https://go.dev/about" title="">About</a>
+                </li>
+            </ul>
+            <button aria-label="Open navigation." class="Header-navOpen js-headerMenuButton">
+            </button>
+        </nav>
+    </div>
+</header>
+<aside class="NavigationDrawer js-header">
+    <nav class="NavigationDrawer-nav">
+        <div class="NavigationDrawer-header">
+            <a href="https://go.dev/">
+                <img alt="Go." class="NavigationDrawer-logo" src="/static/img/go-logo-blue.svg">
+            </a>
+            <button aria-label="Close navigation." class="NavigationDrawer-close js-headerMenuButton">
+            </button>
+        </div>
+        <ul class="NavigationDrawer-list">
+            <li class="NavigationDrawer-listItem">
+                <a href="https://go.dev/solutions" title="Why Go">Why Go</a>
+            </li>
+            <li class="NavigationDrawer-listItem">
+                <a href="https://learn.go.dev" title="Getting Started">Getting Started</a>
+            </li>
+            <li class="NavigationDrawer-listItem NavigationDrawer-listItem--active">
+                <a href="/" title="Discover Packages">Discover Packages</a>
+            </li>
+            <li class="NavigationDrawer-listItem">
+                <a href="https://go.dev/about" title="">About</a>
+            </li>
+            <li class="NavigationDrawer-listItem">
+                <a href="https://golang.org" title="golang.org">golang.org</a>
+            </li>
+        </ul>
+    </nav>
+</aside>
+<div class="NavigationDrawer-scrim js-scrim" role="presentation">
+</div>
+<main class="Site-content">
+    <div class="Container">
+        <a class="GodocButton" href="">Back to godoc.org</a>
+        <div class="SearchResults">
+            <h1 class="SearchResults-header">Results for “log”</h1>
+            <div class="SearchResults-help"><a href="/search-help">Search help</a></div>
+            <div class="SearchResults-resultCount">
+                1 – 10 of about 31000 results
+
+
+                <div class="Pagination-nav">
+                    <div class="Pagination-navInner">
+
+
+                        <span aria-disabled="true" class="Pagination-previous">Previous</span>
+
+
+                        <b class="Pagination-number">1</b>
+
+
+                        <a class="Pagination-number" href="/search?page=2&amp;q=log">2</a>
+
+
+                        <a class="Pagination-number" href="/search?page=3&amp;q=log">3</a>
+
+
+                        <a class="Pagination-number" href="/search?page=4&amp;q=log">4</a>
+
+
+                        <a class="Pagination-number" href="/search?page=5&amp;q=log">5</a>
+
+
+                        <a class="Pagination-next" href="/search?page=2&amp;q=log">Next</a>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div>
+
+
+                <div class="SearchSnippet">
+                    <h2 class="SearchSnippet-header">
+                        <a href="/log">log</a>
+                    </h2>
+                    <p class="SearchSnippet-synopsis">Package log implements a simple logging package.</p>
+                    <div class="SearchSnippet-infoLabel">
+                        <b class="InfoLabel-title">Version:</b> go1.14.4
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Published:</b> 5 days ago
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Imported by:</b> 150652
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">License:</b>
+
+                        BSD-3-Clause
+
+                    </div>
+                </div>
+
+                <div class="SearchSnippet">
+                    <h2 class="SearchSnippet-header">
+                        <a href="/github.com/sirupsen/logrus">github.com/sirupsen/logrus</a>
+                    </h2>
+                    <p class="SearchSnippet-synopsis">Package logrus is a structured logger for Go, completely API
+                        compatible with the standard library logger.</p>
+                    <div class="SearchSnippet-infoLabel">
+                        <b class="InfoLabel-title">Version:</b> v1.6.0
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Published:</b> May 2, 2020
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Imported by:</b> 36484
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">License:</b>
+
+                        MIT
+
+                    </div>
+                </div>
+
+                <div class="SearchSnippet">
+                    <h2 class="SearchSnippet-header">
+                        <a href="/github.com/go-kit/kit/log">github.com/go-kit/kit/log</a>
+                    </h2>
+                    <p class="SearchSnippet-synopsis">Package log provides a structured logger.</p>
+                    <div class="SearchSnippet-infoLabel">
+                        <b class="InfoLabel-title">Version:</b> v0.10.0
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Published:</b> Feb 17, 2020
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Imported by:</b> 3195
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">License:</b>
+
+                        MIT
+
+                    </div>
+                </div>
+
+                <div class="SearchSnippet">
+                    <h2 class="SearchSnippet-header">
+                        <a href="/github.com/ethereum/go-ethereum/log">github.com/ethereum/go-ethereum/log</a>
+                    </h2>
+                    <p class="SearchSnippet-synopsis">Package log15 provides an opinionated, simple toolkit for
+                        best-practice logging that is both human and machine readable.</p>
+                    <div class="SearchSnippet-infoLabel">
+                        <b class="InfoLabel-title">Version:</b> v1.9.14
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Published:</b> May 13, 2020
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Imported by:</b> 4598
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Licenses:</b>
+
+                        Apache-2.0, GPL3
+
+                    </div>
+                </div>
+
+                <div class="SearchSnippet">
+                    <h2 class="SearchSnippet-header">
+                        <a href="/sigs.k8s.io/controller-runtime/pkg/runtime/log">sigs.k8s.io/controller-runtime/pkg/runtime/log</a>
+                    </h2>
+                    <p class="SearchSnippet-synopsis">Package log contains (deprecated) utilities for fetching a new
+                        logger when one is not already available.</p>
+                    <div class="SearchSnippet-infoLabel">
+                        <b class="InfoLabel-title">Version:</b> v0.6.0
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Published:</b> Apr 24, 2020
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Imported by:</b> 1568
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">License:</b>
+
+                        Apache-2.0
+
+                    </div>
+                </div>
+
+                <div class="SearchSnippet">
+                    <h2 class="SearchSnippet-header">
+                        <a href="/github.com/go-kit/kit/log/level">github.com/go-kit/kit/log/level</a>
+                    </h2>
+                    <p class="SearchSnippet-synopsis">Package level implements leveled logging on top of Go kit&#39;s
+                        log package.</p>
+                    <div class="SearchSnippet-infoLabel">
+                        <b class="InfoLabel-title">Version:</b> v0.10.0
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Published:</b> Feb 17, 2020
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Imported by:</b> 1529
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">License:</b>
+
+                        MIT
+
+                    </div>
+                </div>
+
+                <div class="SearchSnippet">
+                    <h2 class="SearchSnippet-header">
+                        <a href="/go.uber.org/zap">go.uber.org/zap</a>
+                    </h2>
+                    <p class="SearchSnippet-synopsis">Package zap provides fast, structured, leveled logging.</p>
+                    <div class="SearchSnippet-infoLabel">
+                        <b class="InfoLabel-title">Version:</b> v1.15.0
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Published:</b> Apr 23, 2020
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Imported by:</b> 11273
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">License:</b>
+
+                        MIT
+
+                    </div>
+                </div>
+
+                <div class="SearchSnippet">
+                    <h2 class="SearchSnippet-header">
+                        <a href="/github.com/rs/zerolog/log">github.com/rs/zerolog/log</a>
+                    </h2>
+                    <p class="SearchSnippet-synopsis">Package log provides a global logger for zerolog.</p>
+                    <div class="SearchSnippet-infoLabel">
+                        <b class="InfoLabel-title">Version:</b> v1.19.0
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Published:</b> May 28, 2020
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Imported by:</b> 1410
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">License:</b>
+
+                        MIT
+
+                    </div>
+                </div>
+
+                <div class="SearchSnippet">
+                    <h2 class="SearchSnippet-header">
+                        <a href="/github.com/astaxie/beego/logs">github.com/astaxie/beego/logs</a>
+                    </h2>
+                    <p class="SearchSnippet-synopsis">Package logs provide a general log interface Usage: import &#34;github.com/astaxie/beego/logs&#34;
+                        log := NewLogger(10000) log.SetLogger(&#34;console&#34;, &#34;&#34;) &gt; the first params stand
+                        for how many channel Use it like this: log.Trace(&#34;trace&#34;) log.Info(&#34;info&#34;)
+                        log.Warn(&#34;warning&#34;) log.Debug(&#34;debug&#34;) log.Critical(&#34;critical&#34;) more
+                        docs http://beego.me/docs/module/logs.md</p>
+                    <div class="SearchSnippet-infoLabel">
+                        <b class="InfoLabel-title">Version:</b> v1.12.1
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Published:</b> Feb 7, 2020
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Imported by:</b> 790
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">License:</b>
+
+                        Apache-2.0
+
+                    </div>
+                </div>
+
+                <div class="SearchSnippet">
+                    <h2 class="SearchSnippet-header">
+                        <a href="/google.golang.org/appengine/log">google.golang.org/appengine/log</a>
+                    </h2>
+                    <p class="SearchSnippet-synopsis">Package log provides the means of writing and querying an
+                        application&#39;s logs from within an App Engine application.</p>
+                    <div class="SearchSnippet-infoLabel">
+                        <b class="InfoLabel-title">Version:</b> v1.6.6
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Published:</b> Apr 22, 2020
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">Imported by:</b> 1066
+                        <span class="InfoLabel-divider">|</span>
+                        <b class="InfoLabel-title">License:</b>
+
+                        Apache-2.0
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="SearchResults-footer">
+
+
+                <div class="Pagination-nav">
+                    <div class="Pagination-navInner">
+
+
+                        <span aria-disabled="true" class="Pagination-previous">Previous</span>
+
+
+                        <b class="Pagination-number">1</b>
+
+
+                        <a class="Pagination-number" href="/search?page=2&amp;q=log">2</a>
+
+
+                        <a class="Pagination-number" href="/search?page=3&amp;q=log">3</a>
+
+
+                        <a class="Pagination-number" href="/search?page=4&amp;q=log">4</a>
+
+
+                        <a class="Pagination-number" href="/search?page=5&amp;q=log">5</a>
+
+
+                        <a class="Pagination-next" href="/search?page=2&amp;q=log">Next</a>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="Site-footer">
+    <div class="Footer">
+        <div class="Footer-links">
+            <div class="Footer-linkColumn">
+                <a class="Footer-link Footer-link--primary" href="https://go.dev/solutions" title="Why Go">
+                    Why Go
+                </a>
+                <a class="Footer-link" href="https://go.dev/solutions#use-cases" title="Use Cases">
+                    Use Cases
+                </a>
+                <a class="Footer-link" href="https://go.dev/solutions#case-studies" title="Case Studies">
+                    Case Studies
+                </a>
+            </div>
+            <div class="Footer-linkColumn">
+                <a class="Footer-link Footer-link--primary" href="https://learn.go.dev/" title="Getting Started">
+                    Getting Started
+                </a>
+                <a class="Footer-link" href="https://play.golang.org" title="">
+                    Playground
+                </a>
+                <a class="Footer-link" href="https://tour.golang.org" title="">
+                    Tour
+                </a>
+                <a class="Footer-link" href="https://stackoverflow.com/questions/tagged/go?tab=Newest" title="">
+                    Stack Overflow
+                </a>
+            </div>
+            <div class="Footer-linkColumn">
+                <a class="Footer-link Footer-link--primary" href="https://pkg.go.dev" title="Discover Packages">
+                    Discover Packages
+                </a>
+            </div>
+            <div class="Footer-linkColumn">
+                <a class="Footer-link Footer-link--primary" href="https://go.dev/about" title="About">
+                    About
+                </a>
+                <a class="Footer-link" href="https://golang.org/dl/" title="">
+                    Download
+                </a>
+                <a class="Footer-link" href="https://blog.golang.org" title="">
+                    Blog
+                </a>
+                <a class="Footer-link" href="https://golang.org/doc/devel/release.html" title="">
+                    Release Notes
+                </a>
+                <a class="Footer-link" href="https://blog.golang.org/go-brand" title="">
+                    Brand Guidelines
+                </a>
+                <a class="Footer-link" href="https://golang.org/conduct">
+                    Code of Conduct
+                </a>
+            </div>
+            <div class="Footer-linkColumn">
+                <a class="Footer-link Footer-link--primary" href="https://www.twitter.com/golang" title="Connect">
+                    Connect
+                </a>
+                <a class="Footer-link" href="https://www.twitter.com/golang" title="">
+                    Twitter
+                </a>
+                <a class="Footer-link" href="https://github.com/golang" title="">
+                    GitHub
+                </a>
+                <a class="Footer-link" href="https://invite.slack.golangbridge.org/" title="">
+                    Slack
+                </a>
+                <a class="Footer-link" href="https://www.meetup.com/pro/go" title="">
+                    Meetup
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="Footer">
+        <div class="Container Container--fullBleed">
+            <div class="Footer-bottom">
+                <img alt="The Go Gopher" class="Footer-gopher" loading="lazy" src="/static/img/pilot-bust.svg">
+                <ul class="Footer-listRow">
+                    <li class="Footer-listItem"><a href="https://go.dev/copyright">Copyright</a></li>
+                    <li class="Footer-listItem"><a href="https://go.dev/tos">Terms of Service</a></li>
+                    <li class="Footer-listItem"><a href="http://www.google.com/intl/en/policies/privacy/" rel="noopener"
+                                                   target="_blank">Privacy
+                        Policy</a></li>
+                    <li class="Footer-listItem">
+                        <a href="https://golang.org/s/discovery-feedback" rel="noopener" target="_blank">
+                            Report an Issue
+                        </a>
+                    </li>
+                    <li class="Footer-listItem"><a href="https://golang.org" rel="noopener"
+                                                   target="_blank">golang.org</a></li>
+                </ul>
+                <a class="Footer-googleLogo" href="https://google.com" rel="noopener" target="_blank">
+                    <img alt="Google logo" class="Footer-googleLogoImg" loading="lazy"
+                         src="/static/img/google-white.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script async nonce="kUhx+Jq5d8hJcaVc+um4HRYG3ZE="
+        src="https://www.googletagmanager.com/gtm.js?id=GTM-W8MVQXG"></script>
+<noscript>
+    <iframe height="0" nonce="kUhx+Jq5d8hJcaVc+um4HRYG3ZE="
+            src="https://www.googletagmanager.com/ns.html?id=GTM-W8MVQXG" style="display:none;visibility:hidden"
+            width="0"></iframe>
+</noscript>
+
+<script nonce="kUhx+Jq5d8hJcaVc+um4HRYG3ZE="
+        src="/static/js/base.min.js?version=2020-05-28t15-16-825ac736457998207a6ae5d67e4e9b24f0b721a4"></script>
+
