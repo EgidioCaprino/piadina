@@ -10,7 +10,11 @@ import (
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
+	"golang.org/x/text/language"
+	"golang.org/x/text/message"
 )
+
+var printer = message.NewPrinter(language.English)
 
 type ResultPackage struct {
 	Name        string
@@ -21,7 +25,47 @@ type ResultPackage struct {
 	License     string
 }
 
-func fetchResultHtmlPage(page int, query string) (io.Reader, error) {
+func (resultPackage ResultPackage) String() string {
+	title := fmt.Sprintf("%s - %s", resultPackage.Name, resultPackage.Version)
+	packageUrl := fmt.Sprintf("https://pkg.go.dev/%s", resultPackage.Name)
+	imports := printer.Sprintf("Imports: %d", resultPackage.Imports)
+	lines := []string{
+		title,
+		packageUrl,
+		imports,
+		resultPackage.Description,
+		resultPackage.License,
+		resultPackage.PublishDate,
+	}
+	return strings.Join(lines, "\n")
+}
+
+func QueryGoDev(query string, pageLimit int) ([]ResultPackage, error) {
+	if pageLimit < 1 {
+		return nil, fmt.Errorf("expected page limit to be at least 1 but got %d", pageLimit)
+	}
+	var results []ResultPackage
+	for page := 1; page <= pageLimit; page++ {
+		htmlPageReader, err := fetchResultHtmlPage(page, query)
+		if err != nil {
+			return nil, err
+		}
+		defer htmlPageReader.Close()
+
+		pageResults, err := parseResultHtmlPage(htmlPageReader)
+		if err != nil {
+			return nil, err
+		}
+		if len(pageResults) == 0 {
+			break
+		}
+
+		results = append(results, pageResults...)
+	}
+	return results, nil
+}
+
+func fetchResultHtmlPage(page int, query string) (io.ReadCloser, error) {
 	if page <= 0 {
 		return nil, errors.New("page parameter should be equal or greater to 1")
 	}
